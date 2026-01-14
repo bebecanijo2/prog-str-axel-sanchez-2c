@@ -1,6 +1,9 @@
 # Compiled class file
+<<<<<<< HEAD
 
 *.class
+=======
+>>>>>>> dev
 
 # Log file
 *.log
