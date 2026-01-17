@@ -35,6 +35,7 @@ public class Main {
      * @return -> double IMC
      */
     public static double calcularIMC(double pesoKG,double alturaM){
+
         return  pesoKG/(alturaM*alturaM);
     }
 
