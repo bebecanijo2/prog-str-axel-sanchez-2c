@@ -27,6 +27,12 @@ public class Main {
         return sc.nextDouble();
     }
 
+    /**
+     * Funcion para aplicar descuento si la cantidad original es mayor a 1000
+     * @param subtotal Es la cantidad original
+     * @param total Es el total en caso de que se aplique o no el descuento
+     * @return Nos va a devolver el calculo del precio con o sin descuento dependiendo de si aplica o no
+     */
     public static double aplicarDescuentoSiAplica(double subtotal, double total) {
         if (subtotal > UMBRAL_DESCUENTO) {
              total = subtotal - (subtotal * DESCUENTO);
