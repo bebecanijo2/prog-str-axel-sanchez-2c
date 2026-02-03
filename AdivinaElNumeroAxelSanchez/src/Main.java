@@ -41,26 +41,20 @@ public class Main {
 
     }
     public static int obtenerNumeroValido(String mensaje, Scanner sc, int minimo, int maximo){
-
         int entrada;
-
                 while(true){
-
                     System.out.println(mensaje);
 
                     if (sc.hasNextInt()){
-
                         entrada=sc.nextInt();
 
                         if (entrada>=minimo && entrada<=maximo){
-
                             return entrada;
                         }
                         System.out.println("El numero ingresado esta fuera de rango 1-100");
                         fueraDeRango ++;
 
                     }else {
-
                         System.out.println("El dato ingresado no es numerico");
                         datoNoNumerico++;
                         sc.next();
