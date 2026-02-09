@@ -22,6 +22,19 @@ public class GradeService {
         return calificacionFinal = (promedioParciales*CALIFICACION_MINIMA)+(asistencia*ASISTENCIA_PARCIALES);
     }
 
+    public String determinarEstado(double calificacionFinal, int asistencia, boolean entregaProyecto){
+
+        if (calificacionFinal<70){
+            return "REPROBADO POR CALIFICACION";
+        }else if (asistencia<80){
+            return "REPROBADO POR ASISTENCIA";
+        } else if (entregaProyecto == false) {
+            return "REPROBADO POR PROYECTO";
+        } else {
+            return "APROBADO";
+        }
+    }
+
 
     public String getNombreDelAlumno() {
         return nombreDelAlumno;

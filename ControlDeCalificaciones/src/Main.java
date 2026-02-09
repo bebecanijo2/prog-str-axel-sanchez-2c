@@ -18,7 +18,7 @@ public class Main{
         //P
         double promedioParciales = gradeService.calcularPromedioParciales(parcial1, parcial2, parcial3);
         double calificacionFinal = gradeService.calcularCalificacionFinal(asistencia, promedioParciales);
-        String estado = reporte.determinarEstado(calificacionFinal, asistencia, entregaProyecto);
+        String estado = gradeService.determinarEstado(calificacionFinal, asistencia, entregaProyecto);
 
         //O
         reporte.imprimirReporte(nombreDelAlumno, asistencia, promedioParciales, calificacionFinal, entregaProyecto, estado);

@@ -3,18 +3,6 @@ public class Reporte {
 
     private final double NUMERO_DE_PARCIALES = 3;
 
-    public String determinarEstado(double calificacionFinal, int asistencia, boolean entregaProyecto){
-
-        if (calificacionFinal<70){
-            return "REPROBADO POR CALIFICACION";
-        }else if (asistencia<80){
-            return "REPROBADO POR ASISTENCIA";
-        } else if (entregaProyecto == false) {
-            return "REPROBADO POR PROYECTO";
-        } else {
-            return "APROBADO";
-        }
-    }
 
     public void imprimirReporte(String nombreDelAlumno,int asistencia,double promedioParciales,double calificacionFinal,boolean entregaProyecto,String estado){
 
