@@ -7,42 +7,24 @@ public class Main {
 
         System.out.println("____________");
         Persona[] personas = new Persona[20];
-        Persona persona1 = new Persona();
-        Persona persona2 = new Persona();
-        Persona persona3 = new Persona();
 
+        int decision;
 
-        personas[0]=persona1;
-        personas[1]=persona2;
-        personas[2]=persona3;
+        do {
 
-
-
-
-        for (int i = 0; i < sc; i++) {
-            System.out.print("Introduce tu id, usuario: " + i );
-            personas[i] = sc.nextInt(); // 3. Guardar input en el slot i
-        }
+            System.out.println("Elige lo que quieres hacer");
+            System.out.println("1.-Alta");
+            System.out.println("2.-Buscar por ID (solo activas)");
+            System.out.println("3.-Baja logica por ID ");
+            System.out.println("4.-Listar activas");
+            System.out.println("5.-Actualizar nombre por ID (solo activas)");
+            System.out.println("6.salir");
+            sc.nextInt();
 
 
 
+        }while (decision!=6);
 
-
-
-
-        for (Persona persona : personas){
-
-            try{
-                System.out.println("__________");
-                System.out.println(persona.getId());
-                System.out.println(persona.getNombre());
-                System.out.println(persona.isActiva());
-            }catch (Exception e){
-                System.out.println("Hay un null");
-
-            }
-
-            }
 
 
 
