@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class InputValidator {
     public InputValidator() {
     }
@@ -17,10 +16,13 @@ public class InputValidator {
                 if (value>0){
                     return value;
                 }
+
                 System.out.println("El numero no es mayor a 0");
             }else {
                 System.out.println("Eso no es un numero");
                 sc.nextLine();
+
+
             }
         }
     }
