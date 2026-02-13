@@ -15,7 +15,7 @@ public class Main {
             System.out.println("4.- Listar activas");
             System.out.println("5.- Actualizar nombre por ID (solo activas)");
             System.out.println("6.- Salir");
-            System.out.print("Elige una opción: ");
+            System.out.print("Elige una opcion: ");
 
             if (sc.hasNextInt()) {
                 decision = sc.nextInt();
