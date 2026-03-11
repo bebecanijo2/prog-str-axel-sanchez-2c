@@ -38,5 +38,16 @@ public class PersonService {
         if (em.isBlank() || !em.contains("@") || !em.contains(".")){
             throw new IllegalArgumentException("El email es invalido");
         }
+
+        try {
+            int edadValida = Integer.parseInt(edad);
+            if (edadValida < 0) throw new IllegalArgumentException("Edad menor a 0");
+            if (edadValida < 18) throw new IllegalArgumentException("Menor de 18");
+        } catch (Exception e) {
+            if (e instanceof NumberFormatException) {
+                throw new IllegalArgumentException("Edad no numérica");
+            }
+            throw e;
+        }
     }
 }
