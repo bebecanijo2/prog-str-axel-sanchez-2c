@@ -95,6 +95,16 @@ public class AppController {
     }
 
     @FXML
+    public void onDelete() throws IOException {
+        int index = listView.getSelectionModel().getSelectedIndex();
+        String nombre = txtName.getText();
+        String email = txtEmail.getText();
+        String edad = txtEdad.getText();
+        service.deletePerson(index, nombre, email, edad);
+        loadFromFile();
+    }
+
+    @FXML
     public void onReload(){
         loadFromFile();
     }
