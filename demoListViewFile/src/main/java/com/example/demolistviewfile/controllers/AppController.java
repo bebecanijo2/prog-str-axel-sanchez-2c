@@ -102,6 +102,8 @@ public class AppController {
         String edad = txtEdad.getText();
         service.deletePerson(index, nombre, email, edad);
         loadFromFile();
+
+
     }
 
     @FXML
